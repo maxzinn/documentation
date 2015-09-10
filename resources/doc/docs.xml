@@ -1,34 +1,32 @@
-<?xml version="1.0"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <docs>
     <start attr="index.xml"/>
     <category>
         <title>Programmiersprachen</title>
         <sub>
             <name>Java</name>
-            <link>Resources/doc/programming_languages/java.xml</link>
+            <link>resources/doc/programming_languages/java.xml</link>
         </sub>
         <sub>
             <name>Javascript</name>
-            <link>Resources/doc/programming_languages/javascript.xml</link>
+            <link>resources/doc/programming_languages/javascript.xml</link>
         </sub>
     </category>
-        
     <category>
         <title>Markup Languages</title>
         <sub>
             <name>XML</name>
-            <link>Resources/doc/markup_languages/xml.xml</link>
+            <link>resources/doc/markup_languages/xml.xml</link>
         </sub>
         <sub>
             <name>HTML</name>
-            <link>Resources/doc/markup_languages/html.xml</link>
+            <link>resources/doc/markup_languages/html.xml</link>
         </sub>
     </category>
     <category>
         <title>Berichtshefte</title>
         <sub>
-            
+            <name>&lt;div id="createnewuser" class="new" onclick="newUser()"&gt;Neuen User erstellen&lt;/div&gt;</name>
         </sub>
     </category>
 </docs>

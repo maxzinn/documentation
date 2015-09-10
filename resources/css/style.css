@@ -30,7 +30,7 @@ body
 
 #title_logo
 {
-    background: url('Resources/img/r2e2_logo.png');
+    background: url('resources/r2e2_logo.png');
     background-size: 100% 100%;
     width: 50px;
     height: 71px;
@@ -104,7 +104,7 @@ body
 }
 
 .ui-state-default .ui-icon {
-    background-image: url("Resources/img/ui-icons_454545_256x240.png");
+    /*background: url('resources/ui-icons_454545_256x240.png');*/
 }
 
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon {

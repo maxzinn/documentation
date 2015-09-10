@@ -37,30 +37,28 @@ function index(link) {
            }
         }
     });
-    console.log("leeren");
 }
 
 function corporateData() {
-	console.log("corporateData");
-	
+
 	$.ajax({
 		url:"resources/doc/docs.xml",
 		dataType: "xml",
 		success: function(data) {
-			console.log("get xml successful");
-			
-			
+
+			var accordion = $("#accordion");
 			var menus = $(data).find("category");
 			for(var i=0; i < menus.length; i++)
 			{
 				var menu = $(menus[i]);
+           
 				
 				//Append category
 				var categoryTitle = menu.find("title").text();
 				var categoryTitleObj = $('<h3 class="sidebar_menu">'+categoryTitle+'</h3>');
 				var categoryContainerObj = $('<div></div>');
-				$("#accordion").append(categoryTitleObj);
-				$("#accordion").append(categoryContainerObj);
+				accordion.append(categoryTitleObj);
+				accordion.append(categoryContainerObj);
 				
 				var names = menu.find("sub").find('name');
                 var links = menu.find("sub").find('link');
@@ -68,8 +66,7 @@ function corporateData() {
 				{
 					var name = $(names[j]).text();
                     var link = $(links[j]).text();
-					console.log("Name %i: %s", j, name);
-					
+
 					//example
 					var submenuObj = $('<div class="item" onclick="index(&apos;'+link+'&apos;)">'+name+'</div>');
 					categoryContainerObj.append(submenuObj);
@@ -91,12 +88,16 @@ function corporateData() {
 				*/
 			}
 			
-			$("#accordion").accordion({
+			accordion.accordion({
             	collapsible: true
             });
 	
 		}
 	});
+}
+
+function newUser() {
+    
 }
 
 
