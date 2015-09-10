@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<docs>
+    <start attr="index.xml"/>
+    <category>
+        <title>Programmiersprachen</title>
+        <sub>
+            <name>Java</name>
+            <link>Resources/doc/programming_languages/java.xml</link>
+        </sub>
+        <sub>
+            <name>Javascript</name>
+            <link>Resources/doc/programming_languages/javascript.xml</link>
+        </sub>
+    </category>
+        
+    <category>
+        <title>Markup Languages</title>
+        <sub>
+            <name>XML</name>
+            <link>Resources/doc/markup_languages/xml.xml</link>
+        </sub>
+        <sub>
+            <name>HTML</name>
+            <link>Resources/doc/markup_languages/html.xml</link>
+        </sub>
+    </category>
+    <category>
+        <title>Berichtshefte</title>
+        <sub>
+            
+        </sub>
+    </category>
+</docs>
