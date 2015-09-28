@@ -2,18 +2,33 @@
 <html><!-- This is the main page, where everything should be placed on. -->
     <head>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"/>
+        <script src="../r2e2layouter/resources/kendoui/js/kendo.all.min.js"/>
+        <link href="../r2e2layouter/resources/kendoui/styles/kendo.common.min.css" rel="stylesheet"/>
+        <link href="../r2e2layouter/resources/kendoui/styles/kendo.default.min.css" rel="stylesheet"/>
+        <link href="../r2e2layouter/resources/kendoui/styles/kendo.dataviz.min.css" rel="stylesheet"/>
+        <link href="../r2e2layouter/resources/kendoui/styles/kendo.dataviz.default.min.css" rel="stylesheet"/>
         <script src="//code.jquery.com/jquery-1.10.2.js"/>
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"/>
-        <script src="http://kendo.cdn.telerik.com/2015.2.805/js/kendo.all.min.js"/>
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"/>
+        <script src="../r2e2layouter/resources/kendoui/js/kendo.all.min.js"/>
         <link rel="stylesheet" href="resources/css/style.css"/>
         <script type="text/javascript" src="resources/doc/getDocs.js"/>
+        <script type="text/javascript" src="resources/frontend/sidebar_left/plugins/new_category/newcategory.js"/><!--<script type="text/javascript" src="resources/frontend/sidebar_left/plugins/new_user/newuser.js"/>-->
     </head>
     <body onload="index('resources/doc/index.xml')">
+        <div class="winframe">
+            <div id="new-category-window" class="not_selectable">
+                <input type="textfield" id="name"/>
+                <button id="ok">Ok</button>
+            </div>
+        </div><!--<div id="newUser">
+            <input type="textfield" id="username"/>
+            <button id="sub">Ok</button>
+        </div>-->
         <div id="body"><!-- Title Bar on top of the page, where the actual Path of the Documentation is. -->
-            <div id="title_bar">
+            <div id="title_bar" class="not_selectable">
                 <div id="title_pane">
                     <a href="#">
                         <div id="title_logo" onClick="window.location.reload()"/>
@@ -21,24 +36,10 @@
                     <div id="title">Dokumentation</div>
                 </div>
             </div><!-- End of the Title Bar --><!-- Left Sidebar, where the TreeView is. -->
-            <div id="sidebar_left"><!--                TreeView                            -->
-                <div id="accordion"><!-- <h3 id="programmiersprachen" class="sidebar_menu">Programmiersprachen</h3>
-                    <div>
-                        
-                    </div>
-                    <h3 id="markup_languages" class="sidebar_menu">Markup Languages</h3>
-                    <div>
-                                            </div>
-                    <h3 id="" class="sidebar_menu">Section 3</h3>
-                    <div>
-                        
-                    </div>
-                    <h3 id="" class="sidebar_menu">Section 4</h3>
-                    <div>
-                        
-                    </div>--></div>
+            <div id="sidebar_left" class="not_selectable"><!--                TreeView                            -->
+                <div id="accordion"/>
             </div><!-- End of the Left Sidebar --><!-- Main Page with content Documentation -->
-            <div id="main"><!--                <div id="dialog-form" title="Create new user">--><!--                    <p class="validateTips">All form fields are required.</p>--><!--                    --><!--                    <form>--><!--                        <fieldset>--><!--                            <label for="name">Name</label>--><!--                            <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all"></input>--><!--                                <label for="email">Email</label>--><!--                                <input type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all"></input>--><!--                                    <label for="password">Password</label>--><!--                                    <input type="password" name="password" id="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all"></input>--><!--                                        --><!--                                        <! Allow form submission with keyboard without duplicating the dialog button --><!--                                        <input type="submit" tabindex="-1" style="position:absolute; top:-1000px"></input>--><!--                                            </fieldset>--><!--                    </form>--><!--                </div>--></div><!-- End of Main Page -->
+            <div id="main"/><!-- End of Main Page -->
         </div>
     </body>
 </html>

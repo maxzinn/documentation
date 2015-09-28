@@ -1,3 +1,5 @@
+
+/* --- Styles the whole body ---*/
 body
 {
     background: #e0e0e0;
@@ -18,7 +20,10 @@ body
     width: 100%;
 }
 
-#title_bar
+/* --- Style for the titlebar --- */
+
+/* makes the title bar not selectable */
+.not_selectable
 {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -26,6 +31,8 @@ body
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    
+    cursor: default;
 }
 
 #title_logo
@@ -68,6 +75,7 @@ body
     width: 250px;
     float: left;
     overflow: scroll;
+    margin: 0 0 0 0;
     
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -89,9 +97,12 @@ body
 
 #sidebar_left .sidebar_menu
 {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 18px;
     background: #efefef;
     color: #808080;
     border: 1px solid #d5d5d5;
+    transition: hover 300ms;
 }
 
 #sidebar_left .sidebar_menu:hover
@@ -103,9 +114,12 @@ body
     background: #afafaf;
 }
 
-.ui-state-default .ui-icon {
-    /*background: url('resources/ui-icons_454545_256x240.png');*/
+#sidebar_left .sidebar_menu
+{
+    padding-left: 0.1em;
+    padding-right: 3em;
 }
+
 
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
     right: 15px;
@@ -159,13 +173,34 @@ body
 
 .ui-accordion-content .item
 {
-    display: block;
-    margin: 2px 5px 2px 10px;
-    
-    color: #606060;
+    display: list-item;
+    display: -webkit-list-item;
+    margin: 2px 5px 2px 0px;
+    color: #808080;
     cursor: default;
+    padding-left: 10px;
+    width: 100%;
+    height: auto;
+    -webkit-transition: 300ms;
+    -webkit-transition: 300ms;
+    -khtml-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    transition: 300ms;
     
 }
+
+.text
+{
+    width: 100%;
+    height: 20px;
+}
+.ui-accordion-content .item:hover
+{
+    background: #efefef;
+}
+
+
 
 .ui-accordion .ui-accordion-content {
     border: 1px solid #d5d5d5;
@@ -175,10 +210,13 @@ body
     background: #f9f9f9;
 }
 
-#main > *
+#main
 {
-    margin-left: 20px;
+    margin: 0 0 0 0;
+    padding: 10px;
 }
+
+
 
 #main .header
 {
@@ -186,8 +224,10 @@ body
     font-size: 60px;
     font-weight: bolder;
     margin: 30px 0 30px 20px;
+    transition: 1000ms;
     
 }
+
 
 #main .paragraph_header
 {
@@ -201,5 +241,19 @@ body
     font-family: 'Arial'
 }
 
+.sidebar_menu_button .ui-icon
+{
+    background: none;
+}
+.sidebar_menu_button + .ui-accordion-content
+{
+    height: 0px !important;
+    border: none;
+}
+
+#button span
+{
+    background: none;
+}
 
 
