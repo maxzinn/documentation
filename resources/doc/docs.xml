@@ -2,31 +2,49 @@
 <docs>
     <start attr="index.xml"/>
     <category>
+        <id>newcategory</id>
+        <type>button</type>
+        <func>newCategory()</func>
+        <title>Neue Kategorie hinzufügen</title>
+    </category>
+    <category>
+        <id>programminglanguages</id>
+        <type>menu</type>
         <title>Programmiersprachen</title>
         <sub>
+            <subtype>doc</subtype>
             <name>Java</name>
             <link>resources/doc/programming_languages/java.xml</link>
         </sub>
         <sub>
+            <subtype>doc</subtype>
             <name>Javascript</name>
             <link>resources/doc/programming_languages/javascript.xml</link>
         </sub>
     </category>
     <category>
+        <id>markuplanguages</id>
+        <type>menu</type>
         <title>Markup Languages</title>
         <sub>
+            <subtype>doc</subtype>
             <name>XML</name>
             <link>resources/doc/markup_languages/xml.xml</link>
         </sub>
         <sub>
+            <subtype>doc</subtype>
             <name>HTML</name>
             <link>resources/doc/markup_languages/html.xml</link>
         </sub>
     </category>
     <category>
+        <id>recordbooks</id>
+        <type>menu</type>
         <title>Berichtshefte</title>
         <sub>
-            <name>&lt;div id="createnewuser" class="new" onclick="newUser()"&gt;Neuen User erstellen&lt;/div&gt;</name>
+            <subtype>button</subtype>
+            <name>Neuen User erstellen</name>
+            <link>resources/doc/berichtshefte/new_user.xml</link>
         </sub>
     </category>
 </docs>
